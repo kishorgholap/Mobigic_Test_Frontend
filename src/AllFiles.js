@@ -94,12 +94,14 @@ getAllFiles();
         <h1>ALL Files</h1>
         <ul>
             <li>File Name</li>
+            <li>File Code</li>
             <li>Action</li>
         </ul>
         {
             files.length>0 ? files.map((item,index)=>
                 <ul>
                     <li>{item.filename}</li>
+                    <li>{item.otp}</li>
                     <li><button className="signup-button" onClick={()=>deleteFile(item._id)}>Delete</button> <button className="signup-button" onClick={()=>selectFile(item._id)}>Download</button></li>
                     {isOpen && (
         <div className="popup">

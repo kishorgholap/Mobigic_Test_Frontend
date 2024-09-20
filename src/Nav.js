@@ -15,7 +15,7 @@ function Nav(){
     <li className="link"><Link to={'/'}>Home</Link></li>
     <li className="link"><Link to={'/allfiles'}>All Files</Link></li>
 
-    <li className="link"><Link to={'/login'} onClick={logout}>Logout</Link></li>
+    <li className="link"><Link to={'/login'} onClick={logout}>Logout ({auth})</Link></li>
     </ul>:
     <ul className="nav-ul">
     <li className="link"><Link to={'/signup'}>Signup</Link></li>
